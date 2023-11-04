@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CoinChange : MonoBehaviour
 {
-    bool iscol = false; // ´Ô Ãæµ¹ÇÔ?
+    bool iscol = false; // ì¶©ëŒ?
     public float rotSpeed = 20f;
 
     // Start is called before the first frame update
@@ -20,7 +20,7 @@ public class CoinChange : MonoBehaviour
         SetStateReset();
     }
 
-    void OnTriggerEnter(Collider col) // Æ®¸®°Å¿Í Ãæµ¹½Ã
+    void OnTriggerEnter(Collider col) // íŠ¸ë¦¬ê±°ì™€ ì¶©ëŒì‹œ
     {
         if (col.gameObject.CompareTag("Car"))
         {
@@ -31,7 +31,7 @@ public class CoinChange : MonoBehaviour
 
     }
 
-    void SetStateReset() // À§Ä¡ ¸®¼Â½Ã Áß¾Ó¼± Ä§¹ü È½¼ö ÃÊ±âÈ­
+    void SetStateReset() // ìœ„ì¹˜ ë¦¬ì…‹ì‹œ ì¤‘ì•™ì„  ì¹¨ë²” íšŸìˆ˜ ì´ˆê¸°í™”
     {
         if (OVRInput.GetDown(OVRInput.Button.Three))
         {
